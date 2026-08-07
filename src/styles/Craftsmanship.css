@@ -1,0 +1,28 @@
+.craft-hero h1 { font-size: 40px; max-width: 660px; }
+.craft-hero .lead { max-width: 600px; }
+
+.gallery-stack { display: flex; flex-direction: column; gap: 120px; }
+
+.services-list-section { background: var(--stone-2); }
+.services-list-section h2 { font-size: 30px; margin-top: 0; }
+.services-list-section .lead { max-width: 480px; margin-bottom: 40px; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 40px;
+}
+.service-item {
+  display: flex; gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.service-num { font-family: var(--font-display); font-size: 22px; color: var(--gold); flex-shrink: 0; }
+.service-item h3 { font-size: 16px; margin-bottom: 5px; }
+.service-item p { font-size: 13px; margin: 0; }
+
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .gallery-stack { gap: 64px; }
+  .craft-hero h1 { font-size: 30px; }
+}
